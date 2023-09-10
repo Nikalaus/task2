@@ -1,16 +1,22 @@
+/** @format */
+
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   text-align: center;
-  text-justify: center;
+  justify-content: center;
   margin: 0;
   padding: 0;
+  font-size: 3vh;
 }
 
 .grid {
   background-color: grey;
   display: grid;
-  grid-template-columns: 600px 1fr;
+  height: 90vh;
+  width: 100vh;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 10% 1fr 20%;
   grid-template-areas:
     "header header"
     "main sidebar"
@@ -19,7 +25,7 @@ body {
 
 header {
   grid-area: header;
-  padding: 20px;
+  padding: 10px;
 }
 
 aside {
@@ -48,7 +54,9 @@ main {
   grid-gap: 15px;
 }
 
-.m1, .m2, .m3 {
+.m1,
+.m2,
+.m3 {
   border: 1px dashed rgb(24, 84, 133);
   background: lightgreen;
   padding: 1em;
@@ -69,14 +77,14 @@ main {
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 20px;
+  grid-gap: 10px;
   padding: 1em;
 }
 
 .f {
   border: 1px solid rgb(24, 84, 133);
   background: whitesmoke;
-  padding: 25px;
+  padding: 5px;
 }
 
 p {
